@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  vue-app:
+    user: $UID:$GID
+    build:
+      context: "./frontend"
+      dockerfile: "Dockerfile"
+      args:
+        UID: $UID
+        GID: $GID
+        USERNAME: $USERNAME
+    ports:
+      - 8083:8080
+    volumes:
+      - ./frontend:/frontend
+    tty: true
+    environment:
+      - NODE_ENV=development
