@@ -48,7 +48,7 @@ nohup /home/pi/env/bin/python flask_server.py > flask.log &
 
 ## Node-RED Alexa Home Skill Bridgeの設定
 1. ブラウザでhttps://alexa-node-red.bm.hardill.me.uk/に接続
-1. ma_si_620_bed/...でログイン
+1. xxxx_bed/...でログイン
 1. 新しいボタンを追加(例：name=description=bed_aircon_reibou, Actions=on, type=switch)
 
 ## alexaの設定
